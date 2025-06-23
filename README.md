@@ -30,3 +30,27 @@ grep "ERROR" logs/*.log
  -mkdir practice
  -cd practice
  -touch notes.txt
+
+Section 1: Terminal Basics & File Management
+1. Navigate to your home directory, then list all hidden files. Which ones are commonly used for configuration?
+#
+-cd ~
+-ls -a
+
+2. Create a directory named projects, then create a file called README.md inside it with the text “My Projects”.
+#
+mkdir projects
+echo "My Projects" > projects/README.md
+
+3. Change the permissions of a file script.sh to make it executable only by the owner.
+chmod 700 script.sh
+
+4. Copy all .txt files from the current directory into a folder named backup. If it doesn’t exist, create it.
+#
+mkdir -p backup
+cp *.txt backup/
+
+5. One-liner that finds all .log files under /var/log and outputs their filenames and sizes.
+#
+find /var/log -type f -name "*.log" -exec du -h {} +
+
