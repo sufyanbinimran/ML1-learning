@@ -27,6 +27,6 @@ grep "ERROR" logs/*.log
 
 
 🟡 Intermediate Level
-mkdir practice
-cd practice
-touch notes.txt
+ -mkdir practice
+ -cd practice
+ -touch notes.txt
