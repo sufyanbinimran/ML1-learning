@@ -14,3 +14,19 @@
   grep -o 'User=[^ ]*' logs/*.log | cut -d= -f2 | sort | uniq
 
 grep "ERROR" logs/*.log
+
+
+## 🟢 Beginner Bash Tasks
+
+- **Print Your Name:**  
+  Created a script that stores a name in a variable and prints a greeting message.
+  ```bash
+  # hello.sh
+  my_name="Sufyan"
+  echo "Hello, $my_name!"
+
+
+🟡 Intermediate Level
+mkdir practice
+cd practice
+touch notes.txt
